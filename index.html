@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            pipeline-doc
+        </title>
+        <!-- Load jquery -->
+        <script src="./node_modules/jquery/dist/jquery.min.js" type="text/javascript">
+        </script>
+        <!-- Load lodash -->
+        <script src="./node_modules/lodash/lodash.min.js" type="text/javascript">
+        </script>
+        <!-- Load the lodash-template-manager -->
+        <script src="./node_modules/lodash-template-manager/dist/templateManager.min.js" type="text/javascript">
+        </script>
+        <!-- Load javascript-csv -->
+        <script src="./node_modules/javascript-csv/src/jquery.csv.js" type="text/javascript">
+        </script>
+        <!-- Load DocGenerator object -->
+        <script src="./dev/docGenerator.js" type="text/javascript">
+        </script>
+        <!-- Load Bootstrap -->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js">
+        </script>
+        <!-- Load css -->
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/pipeline-doc.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(event) {
+
+   						var docGenerator = new DocGenerator("./data_definitions/preprocessed_data_pca_without_special_class.mod.definition.csv");
+
+
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
