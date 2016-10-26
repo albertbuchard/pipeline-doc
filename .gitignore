@@ -1,3 +1,7 @@
 node_modules
-data_definitions
-jsdoc.json
+
+# exclude everything
+data_definitions/*
+
+# exception to the rule
+!data_definitions/.gitkeep 
