@@ -1,7 +1,3 @@
 node_modules
-
-# exclude everything
 data_definitions/*
-
-# exception to the rule
 !data_definitions/.gitkeep 
