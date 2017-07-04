@@ -113,9 +113,9 @@ class DocGenerator {
 
     this.templateManager.renderInTarget("container", containerVariables, this.boxElement);
 
-    $(".doc-generator-menu-parent-item-link").click(function (e) {
-      $("#" + e.target.id + ".doc-generator-content-variable-container").toggle();
-    });
+    // $(".doc-generator-menu-parent-item-link").click(function (e) {
+    //   $("#" + e.target.id + "-content").toggle();
+    // });
     // TODO
   }
 
@@ -235,6 +235,7 @@ class DocGenerator {
 
     var fields = {
       id: id,
+      idContent: id+"-content",
       itemName: variable.variable_name,
       childrenItems: "",
       type: variable.variable_type,
@@ -323,4 +324,16 @@ class DocGenerator {
     return aRet.join('');
   }
 
+}
+
+// usefull to export single page
+function toggle_visibility(id) {
+    var ul = document.getElementById('links');
+    var box = document.getElementById(id);
+    if(box.style.display == 'none')
+    {
+        box.style.display = 'block';
+    } else {
+        box.style.display = 'none';
+    }
 }
